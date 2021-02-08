@@ -4,6 +4,7 @@ import { AngularEditorConfig } from './config';
 import { AngularEditorToolbarComponent } from './angular-editor-toolbar.component';
 import { AngularEditorService } from './angular-editor.service';
 import { DomSanitizer } from '@angular/platform-browser';
+import * as i0 from "@angular/core";
 export declare class AngularEditorComponent implements OnInit, ControlValueAccessor, AfterViewInit, OnDestroy {
     private r;
     private editorService;
@@ -123,4 +124,6 @@ export declare class AngularEditorComponent implements OnInit, ControlValueAcces
     getCustomTags(): string;
     ngOnDestroy(): void;
     filterStyles(html: string): string;
+    static ɵfac: i0.ɵɵFactoryDef<AngularEditorComponent, [null, null, null, null, null, { attribute: "tabindex"; }, { attribute: "autofocus"; }]>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<AngularEditorComponent, "angular-editor", never, { "id": "id"; "config": "config"; "placeholder": "placeholder"; "tabIndex": "tabIndex"; }, { "html": "html"; "viewMode": "viewMode"; "blurEvent": "blur"; "focusEvent": "focus"; }, never, never>;
 }
