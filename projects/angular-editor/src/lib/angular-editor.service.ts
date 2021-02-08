@@ -171,7 +171,13 @@ export class AngularEditorService {
    * @param imageUrl The imageUrl.
    */
   insertImage(imageUrl: string) {
-    this.doc.execCommand('insertImage', false, imageUrl);
+    if (imageUrl.includes('http')) {
+      this.http.get(imageUrl).subscribe(imageData => {
+        this.doc.execCommand('insertImage', false, imageData);
+      });
+    } else {
+      this.doc.execCommand('insertImage', false, imageUrl);
+    }
   }
 
   setDefaultParagraphSeparator(separator: string) {
