@@ -4,7 +4,6 @@ import { HttpResponse, HttpEvent } from '@angular/common/http';
 import { CustomClass } from './config';
 import { SelectOption } from './ae-select/ae-select.component';
 import { Observable } from 'rxjs';
-import * as i0 from "@angular/core";
 export declare class AngularEditorToolbarComponent {
     private r;
     private editorService;
@@ -92,6 +91,4 @@ export declare class AngularEditorToolbarComponent {
     setCustomClass(classId: string): void;
     isButtonHidden(name: string): boolean;
     focus(): void;
-    static ɵfac: i0.ɵɵFactoryDef<AngularEditorToolbarComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<AngularEditorToolbarComponent, "angular-editor-toolbar", never, { "id": "id"; "uploadUrl": "uploadUrl"; "upload": "upload"; "showToolbar": "showToolbar"; "fonts": "fonts"; "customClasses": "customClasses"; "defaultFontName": "defaultFontName"; "defaultFontSize": "defaultFontSize"; "hiddenButtons": "hiddenButtons"; }, { "execute": "execute"; }, never, never>;
 }
