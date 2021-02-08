@@ -61,7 +61,6 @@ typings/
 .next
 
 # compiled output
-/dist
 /tmp
 /out-tsc
 
