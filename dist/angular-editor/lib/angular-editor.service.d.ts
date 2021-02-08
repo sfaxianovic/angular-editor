@@ -1,6 +1,7 @@
 import { HttpClient, HttpEvent } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CustomClass } from './config';
+import * as i0 from "@angular/core";
 export interface UploadResponse {
     imageUrl: string;
 }
@@ -80,4 +81,6 @@ export declare class AngularEditorService {
     getSelectedNodes(): any[];
     replaceWithOwnChildren(el: any): void;
     removeSelectedElements(tagNames: any): void;
+    static ɵfac: i0.ɵɵFactoryDef<AngularEditorService, never>;
+    static ɵprov: i0.ɵɵInjectableDef<AngularEditorService>;
 }
